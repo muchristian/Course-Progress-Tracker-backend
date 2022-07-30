@@ -1,0 +1,37 @@
+[
+    {
+        "model": "modulecrud.User_role",
+        "pk": 1,
+        "fields": {
+          "name": "ADMIN"
+        }
+    },
+    {
+        "model": "modulecrud.User_role",
+        "pk": 2,
+        "fields": {
+          "name": "REGISTRA"
+        }
+    },
+    {
+        "model": "modulecrud.User_role",
+        "pk": 3,
+        "fields": {
+          "name": "DEAN"
+        }
+    },
+    {
+        "model": "modulecrud.User_role",
+        "pk": 4,
+        "fields": {
+          "name": "TEACHER"
+        }
+    },
+    {
+        "model": "modulecrud.User_role",
+        "pk": 5,
+        "fields": {
+          "name": "CLASS_REPRESENTER"
+        }
+    }
+]

@@ -1,0 +1,196 @@
+{
+	"variables": [],
+	"info": {
+		"name": "module_ms",
+		"_postman_id": "a347b7b4-89d8-3b4e-c045-823c6ef84ec7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"description": "",
+			"item": [
+				{
+					"name": "admin-auth",
+					"request": {
+						"url": "localhost:8000/api/users/login/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"admin@mail.com\",\n\t\"password\": \"admin123\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:8000/api/users/profile/",
+					"request": {
+						"url": "localhost:8000/api/users/profile/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ1Mjk1NDM3LCJpYXQiOjE2NDI3MDM0MzcsImp0aSI6ImYyYTNmYzk2M2I0MzRjYTg5MjU3NmQ5YWZhY2NkNTVlIiwidXNlcl9pZCI6MywiaWQiOjMsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJmaXJzdE5hbWUiOiIiLCJsYXN0TmFtZSI6IiIsInJvbGUiOiJBRE1JTiIsInBob25lTnVtYmVyIjoiIn0.wa-7ZptBzTnhu8TIG7MeFgkWnVWhqK4uUB6wWgVackE",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/users/all/",
+					"request": {
+						"url": "localhost:8000/api/users/all/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "faculty",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:8000/api/faculty",
+					"request": {
+						"url": "localhost:8000/api/faculty",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"faculty_name\": \"IT\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/faculty/",
+					"request": {
+						"url": "localhost:8000/api/faculty/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/faculty/update/1",
+					"request": {
+						"url": "localhost:8000/api/faculty/update/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"faculty_name\": \"HUMAN RESOURCE\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/faculty/delete/1",
+					"request": {
+						"url": "localhost:8000/api/faculty/delete/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "department",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:8000/api/department",
+					"request": {
+						"url": "localhost:8000/api/department",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"department_name\": \"SOFTWARE ENGINEERING\",\n\t\"faculty\": 2\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/department/",
+					"request": {
+						"url": "localhost:8000/api/department/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/department/update/1",
+					"request": {
+						"url": "localhost:8000/api/department/update/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"department_name\": \"NET\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

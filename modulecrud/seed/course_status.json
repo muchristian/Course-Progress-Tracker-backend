@@ -1,0 +1,23 @@
+[
+    {
+        "model": "modulecrud.Course_status",
+        "pk": 1,
+        "fields": {
+          "name": "not started"
+        }
+    },
+    {
+        "model": "modulecrud.Course_status",
+        "pk": 2,
+        "fields": {
+          "name": "in progress"
+        }
+    },
+    {
+        "model": "modulecrud.Course_status",
+        "pk": 3,
+        "fields": {
+          "name": "ended"
+        }
+    }
+]
